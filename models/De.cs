@@ -10,9 +10,18 @@ namespace HeroesVsMonster
     {
         public De(int nbrFace)
         {
-            NbrFace = nbrFace;
+            Min = 1;
+            Max = nbrFace;
         }
 
-        public int NbrFace { get; set; }
+        public int Min { get; }
+        public int Max { get;  }
+
+        public int Lancer() {
+            var rand = new Random();
+            return rand.Next(1, this.Max+1);
+        }
+        
+
     }
 }

@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace HeroesVsMonster.models.monstre
 {
-    internal class Orc
+    internal class Orc : Monster
     {
+        public Orc(string name, De de6, De de4) : base(name, de6, de4)
+        {
+            Or = base.De6Face.Lancer();
+            Force = base.Force + 1;
+           
+            
+        }
+        public override string ToString()
+        {
+            return $"{this.Name} est un monstre Orc qui a une force de {this.Force} et une endu de {this.Endu} " +
+                $"et il possede {this.Or} or et {this.Cuir}"; ;
+        }
     }
 }
