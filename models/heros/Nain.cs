@@ -10,7 +10,7 @@ namespace HeroesVsMonster.models.heros
     {
         public Nain(string name, De de6, De de4) : base(name, de6, de4)
         {
-            Endu = base.Endu + 2;
+            
         }
 
         public override string ToString()

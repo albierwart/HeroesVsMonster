@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HeroesVsMonster.models.monstre;
 
 namespace HeroesVsMonster.models.heros
 {
@@ -12,6 +13,9 @@ namespace HeroesVsMonster.models.heros
         {
         }
 
-        public void Ramasse() { }
+        public void Depouiller(Monster monster) {
+            this.Cuir += monster.Cuir;
+            this.Or += monster.Or;
+        }
     }
 }

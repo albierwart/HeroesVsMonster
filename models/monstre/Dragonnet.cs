@@ -12,7 +12,6 @@ namespace HeroesVsMonster.models.monstre
         {
             Or = base.De6Face.Lancer();
             Cuir = base.De4Face.Lancer();
-            Endu = base.Endu + 1;
         }
         public override string ToString()
         {

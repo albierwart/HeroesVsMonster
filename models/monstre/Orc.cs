@@ -11,9 +11,7 @@ namespace HeroesVsMonster.models.monstre
         public Orc(string name, De de6, De de4) : base(name, de6, de4)
         {
             Or = base.De6Face.Lancer();
-            Force = base.Force + 1;
-           
-            
+          
         }
         public override string ToString()
         {

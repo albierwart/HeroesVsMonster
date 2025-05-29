@@ -10,8 +10,7 @@ namespace HeroesVsMonster.models.heros
     {
         public Humain(string name, De de6, De de4) : base(name, de6, de4)
         {
-            Endu = base.Endu + 1;
-            Force = base.Force + 1;
+            
         }
 
         public override string ToString()
