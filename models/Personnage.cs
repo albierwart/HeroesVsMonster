@@ -42,12 +42,12 @@ namespace HeroesVsMonster.models
 
         public int ModifEndu() { 
        
-            switch (this.GetType()) {
-                case typeof(Humain): return 1;
+            switch (this.GetType().Name) {
+                case "humain": return 1;
                     break;
-                case typeof(Dragonnet): return 1;
+                case "Dragonnet": return 1;
                     break;
-                case typeof(Nain):  return 2;
+                case "Nain":  return 2;
                     break;
 
                 default: return 0;
@@ -55,11 +55,11 @@ namespace HeroesVsMonster.models
             }
         }
         public int ModiForce() {
-            switch (this.GetType())
+            switch (this.GetType().Name)
             {
-                case typeof(Humain): return 1;
+                case "Humain": return 1;
                     break;
-                case typeof(Orc): return 1;
+                case "Orc": return 1;
                     break;
                 default:
                     return 0;

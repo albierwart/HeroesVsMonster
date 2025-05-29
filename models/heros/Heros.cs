@@ -17,5 +17,13 @@ namespace HeroesVsMonster.models.heros
             this.Cuir += monster.Cuir;
             this.Or += monster.Or;
         }
+        public void PlacerOnMap(char[,] map)
+        {            
+            map[X, Y] = 'H';
+        }
+        public void Move() {
+            
+        }
     }
+      
 }
